@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json())
 
 
-//uploadFile('C:\\Users\\jatins1\\Desktop\\vercel\\dist\\output\\v1vrp\\package.json', 'output/v1vrp/package-lock.json')
+uploadFile('D:\\Projects\\vercelClone\\dist\\output\\qb3kh\\package-lock.json', 'output/qb3kh/package-lock.json')
 
 console.log(path.join(__dirname, `output/randoString`));
 app.post('/deploy', async(req, res) => {

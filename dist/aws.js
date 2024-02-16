@@ -16,8 +16,8 @@ exports.uploadFile = void 0;
 const aws_sdk_1 = require("aws-sdk");
 const fs_1 = __importDefault(require("fs"));
 const s3 = new aws_sdk_1.S3({
-    accessKeyId: "AKIA2QXZ5RXBLQQ2OKTF",
-    secretAccessKey: "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"
+    accessKeyId: "AKIA2QXZ5RXBIRCCVGET",
+    secretAccessKey: "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"
 });
 //File Path is where where we want to upload the file in s3 ( folder structure in s3)
 const uploadFile = (loaclFilePath, filePath) => __awaiter(void 0, void 0, void 0, function* () {

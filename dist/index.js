@@ -18,10 +18,11 @@ const simple_git_1 = __importDefault(require("simple-git"));
 const utils_1 = require("./utils");
 const path_1 = __importDefault(require("path"));
 const files_1 = require("./files");
+const aws_1 = require("./aws");
 const app = (0, express_1.default)();
 app.use((0, cors_1.default)());
 app.use(express_1.default.json());
-//uploadFile('C:\\Users\\jatins1\\Desktop\\vercel\\dist\\output\\v1vrp\\package.json', 'output/v1vrp/package-lock.json')
+(0, aws_1.uploadFile)('D:\\Projects\\vercelClone\\dist\\output\\qb3kh\\package-lock.json', 'output/qb3kh/package-lock.json');
 console.log(path_1.default.join(__dirname, `output/randoString`));
 app.post('/deploy', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const repoURL = req.body.url;
